@@ -1,5 +1,10 @@
 function minDate(dates) {
-  //write you code here
+  // Make a copy of the input array to avoid modifying it
+  const sortedDates = [...dates];
+  // Sort the copy in ascending order
+  sortedDates.sort();
+  // Return the first element, which is the earliest date
+  return sortedDates[0];
 }
 
 // Do not change the code
